@@ -1,5 +1,6 @@
 package guru.springframework.didemo.services.impl;
 
+import guru.springframework.didemo.repositories.GreetingRepository;
 import guru.springframework.didemo.services.GreetingService;
 import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;
@@ -11,10 +12,14 @@ import org.springframework.stereotype.Service;
 @Primary
 public class PrimarySpanishGreetingService implements GreetingService {
 
-    private static final String SERVICE_DE_ALUDO_PRIMARO = "Service de Aludo Primaro";
+    private GreetingRepository greetingRepository;
+
+    public PrimarySpanishGreetingService(GreetingRepository greetingRepository) {
+        this.greetingRepository = greetingRepository;
+    }
 
     @Override
-    public String sayHello() {
-        return SERVICE_DE_ALUDO_PRIMARO;
+    public String sayGreeting() {
+        return greetingRepository.getSpanishGreeting();
     }
 }

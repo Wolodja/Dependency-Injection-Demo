@@ -9,7 +9,7 @@ public class GreetingServiceImpl implements GreetingService {
     private static final String HELLO = "Hello Guru - Original";
 
     @Override
-    public String sayHello() {
+    public String sayGreeting() {
         return HELLO;
     }
 }

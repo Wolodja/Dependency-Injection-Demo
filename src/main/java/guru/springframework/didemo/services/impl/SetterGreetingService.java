@@ -9,7 +9,7 @@ public class SetterGreetingService implements GreetingService {
     private static final String I_AM_FROM_SETTER_GREETING_SERVICE = "I am from SetterGreetingService";
 
     @Override
-    public String sayHello() {
-    return I_AM_FROM_SETTER_GREETING_SERVICE;
+    public String sayGreeting() {
+        return I_AM_FROM_SETTER_GREETING_SERVICE;
     }
 }

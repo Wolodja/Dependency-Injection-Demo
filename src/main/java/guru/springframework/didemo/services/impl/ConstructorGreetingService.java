@@ -9,8 +9,9 @@ public class ConstructorGreetingService implements GreetingService {
 
     private static final String I_M_FROM_CONSTRUCTOR_GREETING_SERVICE = "I'm from ConstructorGreetingService";
 
+
     @Override
-    public String sayHello() {
+    public String sayGreeting() {
         return I_M_FROM_CONSTRUCTOR_GREETING_SERVICE;
     }
 }

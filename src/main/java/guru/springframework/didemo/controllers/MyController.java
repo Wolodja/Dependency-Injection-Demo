@@ -13,6 +13,6 @@ public class MyController {
     }
 
     public String hello(){
-       return greetingService.sayHello();
+       return greetingService.sayGreeting();
     }
 }

@@ -11,7 +11,7 @@ public class SetterInjectedController {
     private GreetingService greetingService;
 
     public String sayHello(){
-        return greetingService.sayHello();
+        return greetingService.sayGreeting();
     }
 
     @Autowired
