@@ -35,7 +35,7 @@ public class PropertyConfig {
     @Bean
     public FakeDataSource fakeDataSource() {
         FakeDataSource fakeDataSource = new FakeDataSource();
-        String envUser = environment.getProperty("USERNAME");
+        String envUser = environment.getProperty("USER");
         if (envUser != null) {
             fakeDataSource.setUser(envUser);
         } else {
