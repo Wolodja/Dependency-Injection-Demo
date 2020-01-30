@@ -1,0 +1,34 @@
+# this is a comment
+
+name: John
+
+names:
+  - John
+  - Paul
+  - Ringo
+
+pund_sign: "#"
+
+book:
+  author: Joe Buck
+  publisher: random house
+
+truth: yes
+
+another_truth: True
+
+more_true: true
+
+false: no
+
+string_val: "This is it's qoute"
+
+include_new_lines: |
+  ada  das df sdf
+  sdfsdfsdf sdf sd fsd
+  sdfsdfsdfsd
+
+ignore_new_lines: >
+  fsfds
+  fsdfsdf dsfsdf sdfsd
+  sdfsdf sdfsdfs
